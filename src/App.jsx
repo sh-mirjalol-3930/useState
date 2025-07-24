@@ -3,7 +3,7 @@ import { BrowserRouter, Routes ,Route} from 'react-router'
 import Layout from './pages/layout/Layout'
 import Home from './pages/home/Home'
 import Create from './pages/createCard/Create'
-import NotFound from './pages/notfound/notFound'
+// import NotFound from './pages/notfound/notFound'
 
 const App = () => {
   return (
@@ -12,7 +12,7 @@ const App = () => {
         <Route path='/' element={<Layout/>}>
           <Route index={true} element={<Home/>}/>
           <Route path='/create' element={<Create/>}/>
-          <Route path='*' element={<NotFound/>}/>
+          {/* <Route path='*' element={<NotFound/>}/> */}
         </Route>
       </Routes>
     </BrowserRouter>  
